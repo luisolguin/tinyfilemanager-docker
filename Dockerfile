@@ -3,6 +3,11 @@ FROM php:alpine3.11
 LABEL maintainer minostauros <6764739+minostauros@users.noreply.github.com>
 
 ENV TINYFILEMANAGER_VERSION 2.4.3
+ENV TNYF_ADMIN_NICK A1SDAdmin
+ENV TNYF_ADMIN_PWD ADMNIM123890
+ENV TNYF_USR_NICK A1SDUser
+ENV TNYF_USR_PWD PWD123890
+ENV TINYFILEMANAGER_VERSION 2.4.3
 
 RUN apk --update add git less openssh && \
     mkdir /app && \
